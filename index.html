@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>"Pizza&Pizza" - сервис доставки из пиццерии</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header-img"></div>
+	<header>
+		<a href="index.html" style="display: flex; align-items: center; gap: 10px;"><img src="фото/лого.png"><span style="font-family: 'Roboto Mono';">Pizza&Pizza</span></a>
+		<a id="menu" href="#menu-section">Меню</a>
+		<a id="about" href="#about-us">О нас</a>
+		<a href="#sales" id="header-phone">Акции</a>
+		<a href="basket.html" class="basket"><div class="basket-number">0</div></a>
+	</header>
+	<div class="h1-site">
+		<div id="h1-site-text-1"><span id="h1-site-text-2"  style="font-family: 'Roboto Mono';">"Pizza&Pizza"</span>- сервис доставки из пиццерии</div>
+		<div id="h1-site-text-3">Заказывайте пиццу и напитки на нашем сайте</div>
+		<div id="h1-site-text-4">График работы: 6.00 - 22.00 ежедневно</div>
+		<button onclick="LoginDisplay()">Зарегистрироваться</button>
+	</div>
+	<div class="login">
+		<div class="close" onclick="LoginDisplayNone()"></div>
+		<p style="font-weight: 600;">Авторизация</p>
+		<label for="user-name">Введите Ваше имя:</label>
+		<input onclick="Labelia0()" type="text" name="user-name">
+		<label for="phone-number">Введите Ваш номер телефона:</label>
+		<input onclick="Labelia1()" type="tel" name="phone-number">
+		<button onclick="LoginDisplayNone()">Авторизоваться</button>
+	</div>
+	<section class="section-1" id="about-us">
+		<h2 style="margin-bottom: 60px;">О нас</h2>
+		<hr id="hr-1" style="width: 70%;">
+		<div class="cont-items">
+			<div>
+				<img src="фото/icons8-доставка-пиццы-100.png" width="100" height="100">
+				<p>Быстрая и бесплатная доставка</p>
+			</div>
+			<div>
+				<img src="фото/tag-free-img.png" width="100" height="100">
+				<p>Выгодные цены, регулярные акции</p>
+			</div>
+			<div>
+				<img src="фото/icons8-пицца-100.png" width="100" height="100">
+				<p>Вкусные и качественные блюда</p>
+			</div>
+		</div>
+		<hr id="hr-2" style="width: 70%;">
+	</section>
+	<section class="section-sales" id="sales">
+		<h2 style="color: var(--color-dark);">Действующие акции</h2>
+		<div id="slider">
+			<ul id="slideWrap"> 
+					<li>
+						<div class="sale-img" style="background-image: url(фото/final\ \(27\).jpg);"></div>
+						<div class="cont-sale">
+							<p class="p-sale-1">Акция "5 + 1"</p>
+							<p class="p-sale-2">Закажите 5 напитков и получите 1 мини-пиццу в подарок</p>
+						</div>
+					</li>
+					<li>
+						<div class="sale-img"  style="background-image: url(фото/final\ \(28\).jpg);"></div>
+						<div class="cont-sale">
+							<p class="p-sale-1">Акция "Партнёрская"</p>
+							<p class="p-sale-2">Сделайте заказ, используя промокод от наших партнёров и получите скидку 30%</p>
+						</div>
+					</li>
+					<li>
+						<div class="sale-img"  style="background-image: url(фото/final\ \(13\).jpg);"></div>
+						<div class="cont-sale">
+							<p class="p-sale-1">Акция "Благотворительная"</p>
+							<p class="p-sale-2">Зарегистрируйтесь на нашем сайте, и при каждом вашем онлайн-заказе 5% от уплаченной вами суммы мы перечислим в благотворительный фонд.</p>
+						</div>
+					</li>
+			</ul>
+			<div class="right"></div>
+			<div class="left"></div>
+	</div>
+	</section>
+	<section class="section-2" id="menu-section">
+			<h2>Наше меню</h2>
+			<div class="cont-cards">
+				<div class="right" onclick="CardRight()"></div>
+				<div class="left" onclick="CardLeft()"></div>
+				<div class="card">
+					<div class="card1">
+						<img src="фото/img.png" width="200" height="200">
+						<p>Пицца "Фирменная"</p>
+						<span style="font-size: 15px;">400 руб.</span>
+						<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card1(); Button();">В корзину</button>
+						<div class="detaylar" onclick="Card1(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card1back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Листья базилика</li>
+								<li>Помидоры черри</li>
+								<li>Соус Бешамель</li>
+								<li>Классический соус</li>
+								<li>Мягкий сыр</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card1(); cardBack();">Назад ></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card2">
+						<img src="фото/out-0 (16).png" width="200" height="200">
+						<p>Пицца "Огненная"</p>
+						<span style="font-size: 15px;">400 руб.</span>
+						<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card2(); Button();">В корзину</button>
+						<div class="detaylar" onclick="Card2(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card2back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Листья базилика</li>
+								<li>Ветчина</li>
+								<li>Острый соус</li>
+								<li>Классический соус</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card2(); cardBack();">Назад ></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card3">
+							<img src="фото/out-0 (15).png" width="200" height="200">
+							<p>Пицца "Классическая"</p>
+							<span style="font-size: 15px;">400 руб.</span>
+							<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card3(); Button();">В корзину</button>
+							<div class="detaylar" onclick="Card3(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card3back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Кинза</li>
+								<li>Ветчина</li>
+								<li>Маслины</li>
+								<li>Твёрдый сыр</li>
+								<li>Классический соус</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card3(); cardBack();">Назад ></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card4">
+						<img src="фото/out-0 (13).png" width="200" height="200">
+						<p>Пицца "Грибная"</p>
+						<span style="font-size: 15px;">400 руб.</span>
+						<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card4(); Button();">В корзину</button>
+						<div class="detaylar" onclick="Card4(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card4back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Листья базилика</li>
+								<li>Ветчина</li>
+								<li>Классический соус</li>
+								<li>Грибы шампиньоны</li>
+								<li>Мягкий сыр</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card4(); cardBack();">Назад ></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card5">
+						<img src="фото/out-0 (14).png" width="200" height="200">
+						<p>Пицца "Дачная"</p>
+						<span style="font-size: 15px;">400 руб.</span>
+						<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card5(); Button();">В корзину</button>
+						<div class="detaylar" onclick="Card5(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card5back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Листья базилика</li>
+								<li>Помидоры черри</li>
+								<li>Томатный соус</li>
+								<li>Колбаски</li>
+								<li>Мягкий сыр</li>
+								<li>Классический соус</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card5(); cardBack();">Назад ></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card6">
+						<img src="фото/out-0 (17).png" width="200" height="200">
+						<p>Пицца "Средняя"</p>
+						<span style="font-size: 15px;">400 руб.</span>
+						<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card6(); Button();">В корзину</button>
+						<div class="detaylar" onclick="Card6(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card6back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Листья базилика</li>
+								<li>Колбаски</li>
+								<li>Мягкий сыр</li>
+								<li>Тимьян</li>
+								<li>Классический соус</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card6(); cardBack();">Назад ></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card7">
+						<img src="фото/экзотическая.jpg" width="200" height="200">
+						<p>Пицца "Экзотическая"</p>
+						<span style="font-size: 15px;">400 руб.</span>
+						<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card7(); Button();">В корзину</button>
+						<div class="detaylar" onclick="Card7(); cardDetaylar();">Ингридиенты ></div>
+					</div>
+					<div class="card7back">
+						<p>
+							<ul>
+								<li>Мучное тесто</li>
+								<li>Сладкий перец</li>
+								<li>Помидоры черри</li>
+								<li>Маслины</li>
+								<li>Классический соус</li>
+								<li>Острый соус</li>
+								<li>Колбаски</li>
+							</ul>
+						</p>
+						<hr>
+						<div class="back" onclick="Card7(); cardBack();">Назад ></div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="cont-cards" style="	color: rgb(224, 224, 224); font-family: 'Montserrat';">
+				<div class="right" onclick="CardRight2()"></div>
+				<div class="left" onclick="CardLeft2()"></div>
+				<div class="card card8">
+					<img src="фото/out-0 (6).png" width="170" height="170">
+					<p>Коктейль "Gold"</p>
+					<span style="font-size: 15px;">200 руб.</span>
+					<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card8(); Button();">В корзину</button>
+				</div>
+				<div class="card card9">
+					<img src="фото/out-0 (5).png" width="170" height="170">
+					<p>Коктейль "Orange"</p>
+					<span style="font-size: 15px;">200 руб.</span>
+					<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card9(); Button();">В корзину</button>
+				</div>
+				<div class="card card10">
+					<img src="фото/out-0 (3).png" width="170" height="170">
+					<p>Коктейль "Yellow"</p>
+					<span style="font-size: 15px;">200 руб.</span>
+					<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card10(); Button();">В корзину</button>
+				</div>
+				<div class="card card11">
+					<img src="фото/out-0 (10).png" width="170" height="170">
+					<p>Коктейль "Pinky"</p>
+					<span style="font-size: 15px;">200 руб.</span>
+					<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card11(); Button();">В корзину</button>
+				</div>
+				<div class="card card12">
+					<img src="фото/out-0 (9).png" width="170" height="170">
+					<p>Коктейль "Blue"</p>
+					<span style="font-size: 15px;">200 руб.</span>
+					<button class="basket-button" style="background-color: rgb(34, 34, 34);" onclick="Card12(); Button();">В корзину</button>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<img src="фото/вк-с.png">
+		<img src="фото/инста-с.png">
+		<img src="фото/тг-с.png">
+	</footer>
+	<!-- <section class="section-basket">
+		<p style="padding-bottom: 40px;">Корзина</p>
+		<div class="basket-cont">В корзине пусто</div>
+	</section> -->
+</body>
+<script src="main.js"></script>
+</html>
+</script>
+</html>
