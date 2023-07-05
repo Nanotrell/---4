@@ -404,8 +404,10 @@ h2 {
 	}
 	.section-sales {
 		scale: 0.9;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
-	.cont-cards {
+	.cont-cards *{
 		scale: 0.5;
 	}
 	#h1-site-text-1 {
@@ -453,6 +455,9 @@ h2 {
 	}
 	#h1-site-text-2 {
 		font-size: 25px;
+	}
+	.section-1 {
+		font-size: 16px;
 	}
 }
 
