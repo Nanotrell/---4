@@ -5,7 +5,10 @@
 	--color-dark: rgb(34, 34, 34);
 	--color-bright: rgb(224, 224, 224);
 	--h2-section-size: 30px;
-	
+	--card-1-width: 300px;
+	--card-1-height: 350px;
+	--card-2-width: 250px;
+	--card-2-height: 300px;
 }
 
 #h1-site-text-1 {
@@ -407,8 +410,11 @@ h2 {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	.cont-cards *{
-		scale: 0.4;
+	:root {
+		--card-1-width: 200px;
+		--card-1-height: 250px;
+		--card-2-width: 150px;
+		--card-2-height: 200px;
 	}
 	#h1-site-text-1 {
 		font-size: 17px;
@@ -615,18 +621,18 @@ label {
 
 .card8, .card9, .card10, .card11, .card12 {
 	border: 1px solid var(--color-bright); 
-	max-height: 300px; 
-	max-width: 250px;
-	min-height: 300px; 
-	min-width: 250px;
+	max-height: var(--card-2-height); 
+	max-width: var(--card-2-width);
+	min-height: var(--card-2-height); 
+	min-width: var(--card-2-width);
 	text-align: center;
 }
 
 .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
 	padding-top: 40px;
 	text-align: center;
-	width: 300px;
-	height: 350px;
+	width: var(--card-1-width);
+	height: var(--card-1-height);
 	border: var(--color-bright) 1px solid;
 	color: var(--color-bright);
 	font-family: "Montserrat";
@@ -646,8 +652,8 @@ label {
 	font-family: "Montserrat";
 	transform: perspective(600px) rotateY(-180deg); 
 	top: 0;
-	width: 300px;
-	height: 350px;
+	width: var(--card-1-width);
+	height: var(--card-1-height);
 	background-color: var(--color-dark); 
 	perspective: 600px;
 	z-index: -1;
