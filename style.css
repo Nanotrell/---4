@@ -398,7 +398,7 @@ h2 {
 		scale: 0.9;
 	}
 	.cont-cards {
-		scale: 0.6;
+		scale: 0.5;
 	}
 	#h1-site-text-1 {
 		font-size: 17px;
@@ -411,9 +411,6 @@ h2 {
 	}
 	#h1-site-text-4 {
 		font-size: 15px;
-	}
-	h2 {
-		font-size: 16px;
 	}
 	#slider {
 		height: 200px;
@@ -435,7 +432,7 @@ h2 {
 		margin-left: 10px;
 	}
 	.cont-items {
-		scale: 0.6;
+		scale: 0.5;
 	}
 	#menu {
 		display: none;
@@ -688,7 +685,7 @@ label {
 	cursor: pointer;
 	z-index: 3;
 	background-size: cover;
-	rotate: 180deg;
+	transform: rotate(180deg);
 	position: absolute;
 	top: 50%;
 	left: 5%;
