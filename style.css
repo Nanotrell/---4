@@ -394,6 +394,12 @@ h2 {
 	}
 }
 @media (max-width: 400px) {
+	.section-sales {
+		scale: 0.9;
+	}
+	.cont-cards {
+		scale: 0.6;
+	}
 	#h1-site-text-1 {
 		font-size: 17px;
 	}
@@ -429,7 +435,7 @@ h2 {
 		margin-left: 10px;
 	}
 	.cont-items {
-		scale: 0.8;
+		scale: 0.6;
 	}
 	#menu {
 		display: none;
