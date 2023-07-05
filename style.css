@@ -427,7 +427,12 @@ h2 {
 		--card-2-height: 200px;
 	}
 
+.section-2 {
+	width: 100%;
+}
+
 .cont-cards {
+	scale: 1;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
