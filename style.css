@@ -419,8 +419,17 @@ h2 {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+
+	:root {
+		--card-1-width: 200px;
+		--card-1-height: 250px;
+		--card-2-width: 150px;
+		--card-2-height: 200px;
+	}
+
 .cont-cards {
-	scale: 0.5;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 	#h1-site-text-1 {
 		font-size: 17px;
