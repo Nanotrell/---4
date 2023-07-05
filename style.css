@@ -566,7 +566,7 @@ header a {
 .header-img {
 	z-index: -1;
 	background-size: cover;
-	filter: brightness(50%);
+	filter: brightness(30%);
 	position: absolute;
 	width: 100%;
 	background-image: url(фото/header-img.png);
