@@ -415,7 +415,7 @@ h2 {
 }
 @media (max-width: 400px) {
 	.card button {
-		scale: 0.9;
+		padding: 0;
 	}
 
 	.card span {
