@@ -411,10 +411,10 @@ h2 {
 		padding-bottom: 20px;
 	}
 	:root {
-		--card-1-width: 200px;
-		--card-1-height: 250px;
-		--card-2-width: 150px;
-		--card-2-height: 200px;
+		--card-1-width: 100px;
+		--card-1-height: 150px;
+		--card-2-width: 100px;
+		--card-2-height: 150px;
 	}
 	#h1-site-text-1 {
 		font-size: 17px;
@@ -628,6 +628,10 @@ label {
 	text-align: center;
 }
 
+.card8 img, .card9 img, .card10 img, .card11 img, .card12 img {
+ width: 68%;
+}
+
 .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
 	padding-top: 40px;
 	text-align: center;
@@ -801,5 +805,7 @@ footer img {
 	cursor: pointer;
 }
  
-
+.card img {
+	width: 66%;
+}
 
