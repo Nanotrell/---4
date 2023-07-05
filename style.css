@@ -9,6 +9,7 @@
 	--card-1-height: 350px;
 	--card-2-width: 250px;
 	--card-2-height: 300px;
+	--label-font-size: 20px;
 }
 
 #h1-site-text-1 {
@@ -29,7 +30,9 @@
 	line-height: 30px;
 }
 .login {
-	font-size: 22px;
+	left: 20%;
+	width: 50%;
+	font-size: var(--label-font-size);
 }
 .login p {
 	font-size: 26px;
@@ -98,6 +101,19 @@ header img, footer img {
 	font-size: 18px; 
 	font-family: 'Montserrat'; 
 	padding: 0 10px 0 10px; 
+	cursor: pointer;
+}
+
+.login button {
+	border: 1px solid var(--color-bright);
+	width: fit-content; 
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	background-color: var(--color-dark); 
+	color: var(--color-bright); 
+	font-size: 16px; 
+	font-family: 'Montserrat'; 
+	padding: 10px 10px 10px 10px; 
 	cursor: pointer;
 }
 
@@ -192,9 +208,9 @@ h2 {
 	}
 }
 @media (max-width: 940px) {
-	.login label {
-		font-size: 18px;
-	}
+:root {
+		--label-font-size: 18px;
+}
 	header, footer {
 		height: 80px;
 	}
@@ -227,6 +243,10 @@ h2 {
 	}
 }
 @media (max-width: 840px) {
+	.login {
+		left: 15%;
+		width: 60%;
+	}
 	#slider {
 		width: 600px;
 	}
@@ -272,6 +292,9 @@ h2 {
 	}
 }
 	@media (max-width: 640px) {
+		:root {
+			--label-font-size: 16px;
+		}
 		section {
 			padding: 0;
 		}
@@ -294,8 +317,8 @@ h2 {
 		.login p {
 			font-size: 20px;
 		}
-		.login label {
-			font-size: 14px;
+		.root {
+			--label-font-size: 14px;
 		}
 		header, footer {
 			height: 70px;
@@ -325,6 +348,10 @@ h2 {
 		}
 }
 @media (max-width: 500px) {
+	.login {
+		width: 70%;
+		left: 10%;
+	}
 	.section-sales h2 {
 		margin-bottom: 10px;
 	}
@@ -551,8 +578,6 @@ header a {
 	position: absolute;
 	z-index: 3;
 	top: 150px;
-	left: 20%;
-	width: 50%;
 	background-color: var(--color-dark);
 	border: 1px solid var(--color-bright);
 	padding-left: 10%;
@@ -574,7 +599,7 @@ input {
 }
 label {
 	height: 27px;
-	transition: .6s;
+	transition: .4s;
 }
 .close {
 	cursor: pointer;
@@ -608,20 +633,6 @@ label {
 }
 .h1-site div {
 	font-family: 'Montserrat';
-}
-
-.login button {
-	border: 1px solid var(--color-bright);
-	width: fit-content; 
-	margin-top: 20px; 
-	margin-bottom: 20px;
-	height: 60px; 	
-	background-color: var(--color-dark); 
-	color: var(--color-bright); 
-	font-size: 18px; 
-	font-family: 'Montserrat'; 
-	padding: 0 10px 0 10px; 
-	cursor: pointer;
 }
 
 .section-1 {

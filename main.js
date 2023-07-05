@@ -1,17 +1,29 @@
+let Login = document.getElementsByClassName('login')[0];
+let LabelFontSize = getComputedStyle(Login).getPropertyValue('--label-font-size');
 
 let LoginDisplay = function() {
-	let Login = document.getElementsByClassName('login')[0];
 	Login.style.display = "inline-block";
 }
+
 let Labelia0 = function() {
-	document.getElementsByTagName("label")[0].style.fontSize = "18px";
+	document.getElementsByTagName("label")[0].style.fontSize = (parseInt(LabelFontSize) - 2) + "px";
 }
 let Labelia1 = function() {
-	document.getElementsByTagName("label")[1].style.fontSize = "18px";
+	document.getElementsByTagName("label")[1].style.fontSize = (parseInt(LabelFontSize) - 2) + "px";
 }
 let LoginDisplayNone = function() {
 	let Login = document.getElementsByClassName('login')[0];
 	Login.style.display = "none";
+}
+
+let loginAction = function() {
+	let userName = document.getElementsByName("user-name")[0].value;
+	let userPhone = document.getElementsByName("phone-number")[0].value;
+	if (userName == "" || userPhone == "") {
+		alert("Заполните все поля!");
+	} else {
+		alert(`${userName}, Вы авторизованы!`);
+	}
 }
 
 let s;
