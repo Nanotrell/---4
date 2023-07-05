@@ -44,6 +44,10 @@
 	width: 900px;
 }
 
+.card span {
+	font-size: 15px;
+}
+
 .section-sales h2 {
 	margin-bottom: 50px;
 }
@@ -74,6 +78,10 @@ header img, footer img {
 .cont-items img {
 	width: 100px;
 	height: 100px;
+}
+
+.detaylar, .back {
+	font-size: 18px;
 }
 
 .h1-site button {
@@ -406,6 +414,16 @@ h2 {
 	}
 }
 @media (max-width: 400px) {
+	.card button {
+		scale: 0.9;
+	}
+
+	.card span {
+		font-size: 12px;
+	}
+	.detaylar, .back {
+		font-size: 14px;
+	}
 	.cont-items img {
 		width: 80px;
 		height: 80px;
@@ -696,7 +714,6 @@ label {
 }
 
 .detaylar {
-	font-size: 18px;
 	position: absolute;
 	transition: 1s;
 	cursor: pointer;
@@ -710,7 +727,6 @@ label {
 
 
 .back {
-	font-size: 18px;
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
