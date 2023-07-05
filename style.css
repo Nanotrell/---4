@@ -58,6 +58,10 @@ section {
 	padding-top: 50px;
 }
 
+.card {
+	font-size: 20px;
+}
+
 .section-1 {
 	font-size: 24px;
 }
@@ -432,6 +436,8 @@ h2 {
 }
 
 .cont-cards {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	scale: 1;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -484,6 +490,9 @@ h2 {
 	}
 	.section-1 {
 		font-size: 16px;
+	}
+	.card {
+		font-size: 15px;
 	}
 }
 
@@ -632,7 +641,6 @@ label {
 
 .card {
 	display: inline-block;
-	font-size: 20px;
 	position: relative;
 	border-radius: 10px;
 	transform: perspective(600px); 
