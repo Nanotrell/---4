@@ -695,8 +695,10 @@ label {
 .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
 	padding-top: 40px;
 	text-align: center;
-	width: var(--card-1-width);
-	height: var(--card-1-height);
+	max-height: var(--card-1-height); 
+	max-width: var(--card-1-width);
+	min-height: var(--card-1-height); 
+	min-width: var(--card-1-width);
 	border: var(--color-bright) 1px solid;
 	color: var(--color-bright);
 	font-family: "Montserrat";
